@@ -233,16 +233,25 @@ class CohortTests(unittest.TestCase):
 class CommittedMetadataTests(unittest.TestCase):
     def test_exact_original_metadata_and_source_qualification(self):
         lock, inventory = locked_inputs(ROOT)
-        self.assertEqual((lock['expectedFiles'], lock['expectedBytes']), (695, 313159164))
-        self.assertEqual([r['version'] for r in lock['releases']], ['v0.60.5'])
+        self.assertEqual((lock['expectedFiles'], lock['expectedBytes']), (1390, 626344204))
+        self.assertEqual([r['version'] for r in lock['releases']], ['v0.60.5', 'v0.60.6'])
         release = lock['releases'][0]
         self.assertEqual(release['tagObject'], '84e846d8f26a0ef79d9a3ae8d4e442516886df4d')
         self.assertEqual(release['sourceRevision'], 'a336f18306a425f6575b77a3017056d32155043f')
         self.assertEqual(release['sourceTree'], 'b80ee2c1ccf455609a6834af14c6760ecce868e3')
         self.assertEqual(release['sourceQualification'], {'sha256': '2722c0fe84549fd292ac360af88736f21fd8a1242b805cefd50c9165f4edd49a', 'bytes': 71706})
         rows = [row for row in inventory['files'] if row['path'].endswith('/source-qualification.json')]
-        self.assertEqual(len(rows), 1)
+        self.assertEqual(len(rows), 2)
         self.assertEqual(rows[0]['bytes'], 71706)
+        self.assertEqual(rows[1]['bytes'], 69214)
+        successor = lock['releases'][1]
+        self.assertEqual(successor['tagObject'], 'aacc45fce2203a11685362c99bc25368d4e037b1')
+        self.assertEqual(successor['sourceRevision'], '9c89f997cdbf0c8266fa65247832dcf2281d61ba')
+        self.assertEqual(successor['sourceTree'], 'df6a6e83dcca0b4b55c402d6804538d0ea43ef37')
+        self.assertEqual(successor['sourceQualification'], {'sha256': '6ffa1ff1c33d34fb96955bc98b01a896a5b05589576a8e9758d2e96f4f7a219e', 'bytes': 69214})
+        prior_rows = [row for row in inventory['files'] if not row['path'].startswith('releases/v0.60.6/')]
+        self.assertEqual((len(prior_rows), sum(row['bytes'] for row in prior_rows)), (695, 313159164))
+        self.assertEqual(sha(encoded({'base': inventory['base'], 'files': prior_rows})), 'e08ae697385773dfe0d5265fcf593a347723c1c5b31eab768f5dd900f62b0a1d')
 
     def test_changed_or_wrong_identity_qualification_refuses(self):
         import shutil
