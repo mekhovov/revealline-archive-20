@@ -1,0 +1,155 @@
+{
+  "status": "SOURCE_CANDIDATE_NOT_DEPLOYED_OR_ADMITTED",
+  "repository": "mekhovov/revealline-archive-20",
+  "archiveBase": "861182677647a1678064b64b0d46c11999a0e731",
+  "archiveBaseTree": "351e6b6dbfcc040dfe8ca50041dff5b4a50085a0",
+  "sourceRepository": "mekhovov/revealline",
+  "releaseId": 391034651,
+  "releasePublishedAt": "2026-09-17T22:37:10Z",
+  "sourceRevision": "9c89f997cdbf0c8266fa65247832dcf2281d61ba",
+  "sourceTree": "df6a6e83dcca0b4b55c402d6804538d0ea43ef37",
+  "tagObject": "aacc45fce2203a11685362c99bc25368d4e037b1",
+  "originalDistribution": {
+    "name": "distribution.zip",
+    "bytes": 313235343,
+    "sha256": "cc98d38942b556be9a45bfd5c59063a8f6437794acc5297314c0e54d6f535a08",
+    "releaseAssetId": 571288368,
+    "url": "https://github.com/mekhovov/revealline/releases/download/v0.60.6/distribution.zip"
+  },
+  "originalMetadata": [
+    {
+      "name": "release.json",
+      "bytes": 465,
+      "sha256": "2be06a680cb31d0d557e65ebb747582b3cb39c99e162244bbe40957a1943a338",
+      "releaseAssetId": 571038255,
+      "url": "https://github.com/mekhovov/revealline/releases/download/v0.60.6/release.json"
+    },
+    {
+      "name": "manifest.json",
+      "bytes": 127378,
+      "sha256": "db91b245c45f97d161e88f32ba5022d4a6d9baf1d0a70a2f9fa22562dfab042b",
+      "releaseAssetId": 571037440,
+      "url": "https://github.com/mekhovov/revealline/releases/download/v0.60.6/manifest.json"
+    },
+    {
+      "name": "distribution.zip.sha256",
+      "bytes": 83,
+      "sha256": "46ead1c6840e77149a8cb85dce4f5ce4fb42a6c09f3f58ddd5163160b789c544",
+      "releaseAssetId": 571037438,
+      "url": "https://github.com/mekhovov/revealline/releases/download/v0.60.6/distribution.zip.sha256"
+    },
+    {
+      "name": "source-qualification.json",
+      "bytes": 69214,
+      "sha256": "6ffa1ff1c33d34fb96955bc98b01a896a5b05589576a8e9758d2e96f4f7a219e",
+      "releaseAssetId": 571037532,
+      "url": "https://github.com/mekhovov/revealline/releases/download/v0.60.6/source-qualification.json"
+    }
+  ],
+  "allNinePublishedAssets": [
+    {
+      "id": 571288368,
+      "name": "distribution.zip",
+      "state": "uploaded",
+      "bytes": 313235343,
+      "sha256": "cc98d38942b556be9a45bfd5c59063a8f6437794acc5297314c0e54d6f535a08"
+    },
+    {
+      "id": 571037438,
+      "name": "distribution.zip.sha256",
+      "state": "uploaded",
+      "bytes": 83,
+      "sha256": "46ead1c6840e77149a8cb85dce4f5ce4fb42a6c09f3f58ddd5163160b789c544"
+    },
+    {
+      "id": 571037440,
+      "name": "manifest.json",
+      "state": "uploaded",
+      "bytes": 127378,
+      "sha256": "db91b245c45f97d161e88f32ba5022d4a6d9baf1d0a70a2f9fa22562dfab042b"
+    },
+    {
+      "id": 571037522,
+      "name": "qualification-evidence-record.json",
+      "state": "uploaded",
+      "bytes": 11373,
+      "sha256": "8a382b9a98cd011c9fad6f3654487bd8b8168caffa52c2fe7ba3fb421fc23d3c"
+    },
+    {
+      "id": 571038255,
+      "name": "release.json",
+      "state": "uploaded",
+      "bytes": 465,
+      "sha256": "2be06a680cb31d0d557e65ebb747582b3cb39c99e162244bbe40957a1943a338"
+    },
+    {
+      "id": 571037437,
+      "name": "source-qualification-evidence.zip",
+      "state": "uploaded",
+      "bytes": 1848158,
+      "sha256": "d7b47da18d45ffc3933c753e456fade2df415399120a3de020188d7179e5c0fc"
+    },
+    {
+      "id": 571037532,
+      "name": "source-qualification.json",
+      "state": "uploaded",
+      "bytes": 69214,
+      "sha256": "6ffa1ff1c33d34fb96955bc98b01a896a5b05589576a8e9758d2e96f4f7a219e"
+    },
+    {
+      "id": 571197729,
+      "name": "source.tar",
+      "state": "uploaded",
+      "bytes": 1050859520,
+      "sha256": "78ab7e57b6282c4c7bbe7602aefb3582386a0d049dd451bbb06a0006bc7f7559"
+    },
+    {
+      "id": 571037507,
+      "name": "verification.json",
+      "state": "uploaded",
+      "bytes": 1913,
+      "sha256": "55ebfd86e3ecdafbe83bc3337d3274cc3840364979ab7bbf024c9cae017ea1eb"
+    }
+  ],
+  "apiOriginalPins": [
+    {
+      "name": "archive-main.json",
+      "bytes": 138791,
+      "sha256": "91c4b271271b62c3bbdc568f2a3ca53dd7ff9ea841e02a9ce3d93d6676ff61fa"
+    },
+    {
+      "name": "published-release.json",
+      "bytes": 18483,
+      "sha256": "c0bceccd29fee6713ee1aa667262329ce7ff8b858649ff4c383f122db15cca82"
+    },
+    {
+      "name": "assets.json",
+      "bytes": 13552,
+      "sha256": "cadd5dad7a1c55c12b4b627d2ee816b958762b9f293c375f92959df5fa80fb4a"
+    },
+    {
+      "name": "tag.json",
+      "bytes": 337,
+      "sha256": "f378fc3fecc2ff1721d4dafda5ec24b1c0460cf1ba992837905242c14caf0374"
+    },
+    {
+      "name": "tag-object.json",
+      "bytes": 802,
+      "sha256": "658964ae112e1836066483762b5b89719c2462487f89196b6c1eca1089ffcba9"
+    }
+  ],
+  "rootPublicAcceptance": {
+    "sha256": "0369f78bbaa5bb8dc0ab560008087e94b134efcb9c2a7846945e8e210ec56eed",
+    "scope": "v0.60.6 main-origin shared Settings delivery; not this future archive deployment"
+  },
+  "preservation": {
+    "files": 695,
+    "bytes": 313159164,
+    "inventorySha256": "e08ae697385773dfe0d5265fcf593a347723c1c5b31eab768f5dd900f62b0a1d",
+    "allPriorPathSizeHashesUnchanged": true
+  },
+  "payloadSource": "Exact published original ZIP, hosted extraction only; no rebuild or local payload copy",
+  "actualArchiveCommit": null,
+  "actualDeploymentId": null,
+  "publicAcceptance": null
+}
